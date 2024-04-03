@@ -1,0 +1,180 @@
+:root {
+  --colorBackground: #eaf2f8;
+  --colorBackground2: #40f598;
+  --colorFont: #333333;
+  --fontWeight1: bold;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--colorBackground);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.Header {
+  background-color: var(--colorBackground2);
+  height: 99px;
+  color: var(--colorFont);
+  font-weight: var(--fontWeight1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.Header #dropdown-basic {
+  margin-left: 50%;
+}
+.Title {
+  color: var(--colorFont);
+}
+@keyframes jump-animation {
+  0% {
+    transform: translateY(0); /* Không thay đổi vị trí ban đầu */
+  }
+  50% {
+    transform: translateY(-20px); /* Di chuyển lên 20px */
+  }
+  100% {
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+  }
+}
+.Avatar img {
+  border: solid 5px var(--colorBackground2);
+  border-radius: 50%;
+  animation-name: jump-animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+.grid-item img {
+  max-width: 70%;
+  cursor: pointer;
+}
+.grid-item img:hover {
+  transform: scale(1.25);
+}
+.CardsProject,
+.CardExperience {
+  background-color: var(--colorBackground2);
+  padding: 10px;
+  border: solid 3px var(--colorFont);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.ImgCard {
+  max-width: 30%;
+}
+.ImgCard img {
+  max-width: 80%;
+}
+.CardExperience:hover {
+  animation-name: jump-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+  line-height: 1 !important;
+  opacity: 0.5 !important;
+  color: var(--colorBackground2) !important;
+}
+@media screen and (max-width: 768px) {
+  .CardExperience {
+    max-width: 95%;
+    padding: 5px;
+  }
+  .ImgCard {
+    max-width: 96px;
+  }
+  .ImgCard img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+p {
+  margin-bottom: unset;
+  color: var(--colorFont);
+}
+
+.CardsProject {
+  background-color: var(--colorBackground2);
+  padding: 10px;
+}
+
+.CardsProjectImg img {
+  max-height: 200px;
+}
+
+.Footer {
+  background-color: var(--colorBackground2);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.UnsetPadding {
+  padding: unset !important;
+}
+.Active {
+  transform: scale(1.15);
+}
+.category {
+  cursor: pointer;
+}
+.ButtonCopy {
+  background-color: var(--colorBackground2);
+  color: var(--colorFont);
+}
+.ButtonCopy:hover {
+  color: var(--colorFont);
+  background-color: var(--colorBackground2);
+}
+.Slider {
+  height: 500px;
+  background-color: var(--colorFont);
+  color: var(--colorBackground2);
+  position: relative;
+  left: 0;
+  right: 0;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.write {
+  color: var(--colorBackground2);
+  animation: blink 1s infinite;
+}
+.CarsCertificate {
+  padding-left: 20px;
+}
+.slick-slide {
+  opacity: 0.4;
+}
+.slick-center {
+  opacity: 2;
+  transform: translateY(-5px);
+}
