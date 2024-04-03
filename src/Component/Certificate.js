@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import {Row } from 'react-bootstrap';
 import React from "react";
 import Slider from "react-slick";
 import picture from "../image/agileSoftware.png"

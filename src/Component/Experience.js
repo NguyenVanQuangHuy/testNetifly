@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import {Row, Col } from 'react-bootstrap';
 import React from "react";
 import Slider from "react-slick";
 const ExperienceComponent = () => {

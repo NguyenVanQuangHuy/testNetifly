@@ -3,8 +3,8 @@ import ExperienceComponent from "../Component/Experience.js";
 import CertificateComponent from "../Component/Certificate.js";
 import ProjectComponent from "../Component/Project.js";
 import Footer from "../Component/Footer.js";
-import { Container, Row, Col } from 'react-bootstrap';
-import React, { useRef, useEffect, useState, useContext } from 'react';
+import { Container} from 'react-bootstrap';
+import React, { useRef, useEffect, useContext } from 'react';
 import { ActionContext } from "../Component/Header.js";
 import SliderComponent from "../Component/Slider.js";
 const HomePage = () => {

@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+
 import React, { useRef, useState } from 'react';
 import { Document, Page } from 'react-pdf';
 const AdminPage = () => {

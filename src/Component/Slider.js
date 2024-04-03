@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react"
+import {useEffect, useState } from "react"
 const SliderComponent = () => {
     const [outputText, setOutputText] = useState("");
     const renderText = (text, time) => {
